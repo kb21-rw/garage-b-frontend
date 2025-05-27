@@ -29,3 +29,17 @@ body {
   background: var(--background);
   font-family: Montserrat, sans-serif;
 }
+
+@keyframes slide-infinite {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.infinite-slide {
+  animation: slide-infinite 20s linear infinite;
+}
