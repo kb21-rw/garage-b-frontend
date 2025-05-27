@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className="container flex flex-col justify-center items-center text-secondary">
       <div className="flex justify-start md:justify-center items-center gap-x-18 gap-y-11 py-18 flex-wrap">
-        <h1 className="text-2xl font-bold">Find us on :</h1>
+        <h1 className="text-2xl lg:text-3xl font-semibold">Find us on :</h1>
         <div className="flex flex-col gap-11">
           <div className="flex gap-10 items-center justify-start">
             {footer.map((el) => {
@@ -22,7 +22,7 @@ const Footer = () => {
               );
             })}
           </div>
-          <p className="text-lg lg:text-2.1xl">
+          <p className="text-lg font-extralight lg:text-2.1xl">
             Or reach out to:
             <a
               href="mail:contact@the-gym.rw"
@@ -36,8 +36,8 @@ const Footer = () => {
       </div>
 
       <hr className="border-1 border-primary w-full" />
-      <p className="py-4">
-        <span>&copy;</span> 2025 <strong className="font-bold">TheGym,</strong>{" "}
+      <p className="py-4 text-lg font-extralight">
+        <span>&copy;</span> 2025 <strong className="font-bold">The Gym,</strong>{" "}
         All rights reserved!
       </p>
     </div>
