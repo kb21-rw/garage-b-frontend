@@ -22,8 +22,8 @@ const Footer = () => {
               );
             })}
           </div>
-          <p className="text-2xl">
-            Or reach out to: {""}
+          <p className="text-lg lg:text-2.1xl">
+            Or reach out to:
             <a
               href="mail:contact@the-gym.rw"
               target="_blank"
@@ -37,7 +37,8 @@ const Footer = () => {
 
       <hr className="border-1 border-primary w-full" />
       <p className="py-4">
-        <span>&copy;</span> 2025 <strong>TheGym,</strong> All rights reserved!
+        <span>&copy;</span> 2025 <strong className="font-bold">TheGym,</strong>{" "}
+        All rights reserved!
       </p>
     </div>
   );

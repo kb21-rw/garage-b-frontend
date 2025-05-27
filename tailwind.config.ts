@@ -19,6 +19,9 @@ export default {
         "12xl": "125rem",
         "18": "4.375rem",
       },
+      fontSize: {
+        "2.1xl": "1.5625rem",
+      },
     },
   },
   plugins: [],
