@@ -5,13 +5,25 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --font-montserrat: 'Montserrat', sans-serif;
+
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --font-montserrat: 'Montserrat', sans-serif;
+
   }
+}
+
+.navbar-container {
+  @apply sticky top-0 z-50 bg-black/50 backdrop-blur-sm px-4 md:px-10 lg:px-20 py-4
+}
+
+.container {
+  @apply max-w-12xl mx-auto px-4 md:px-10 lg:px-20
 }
 
 body {

@@ -12,6 +12,12 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        montserrat: ["var(--font-montserrat)"],
+      },
+      spacing: {
+        "12xl": "125rem",
+      },
     },
   },
   plugins: [],
