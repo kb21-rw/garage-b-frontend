@@ -1,4 +1,6 @@
 export const iconList = {
+  thegym: "/image/thegym.png",
+  syllabi: "/image/syllabi.png",
   plane: "/image/plane.svg",
   transportation: "/image/transportation.svg",
   agriculture: "/image/agriculture.svg",
