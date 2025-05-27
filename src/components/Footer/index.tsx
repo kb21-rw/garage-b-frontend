@@ -13,7 +13,7 @@ const Footer = () => {
                 <Image
                   key={el.id}
                   src={el.logo}
-                  alt="image"
+                  alt={el.logo + "image"}
                   width={40}
                   height={40}
                   objectFit="contain"
