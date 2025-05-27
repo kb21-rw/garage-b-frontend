@@ -11,6 +11,25 @@ In our digital co-creation work we are industry-agnostic. We bring in the digita
   },
 ];
 
+export const footer = [
+  {
+    id: 1,
+    logo: "/image/instagram.svg",
+  },
+  {
+    id: 2,
+    logo: "/image/facebook.svg",
+  },
+  {
+    id: 3,
+    logo: "/image/linkedin.svg",
+  },
+  {
+    id: 4,
+    logo: "/image/twitter.svg",
+  },
+];
+
 export const iconCard = {
   title: "Born in Rwanda active around the world",
   description:
