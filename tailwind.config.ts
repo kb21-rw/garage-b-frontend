@@ -13,10 +13,14 @@ export default {
         foreground: "var(--foreground)",
         primary: "rgba(34, 228, 246, 0.4)",
         secondary: "rgba(255, 255, 255, 1)",
+        "black-300": "rgba(255, 255, 255, 0.11)",
       },
       spacing: {
         "12xl": "125rem",
         "18": "4.375rem",
+      },
+      fontSize: {
+        "2.1xl": "1.5625rem",
       },
     },
   },
