@@ -14,9 +14,6 @@ export default {
         primary: "rgba(34, 228, 246, 0.4)",
         secondary: "rgba(255, 255, 255, 1)",
       },
-      fontFamily: {
-        montserrat: ["var(--font-montserrat)"],
-      },
       spacing: {
         "12xl": "125rem",
         "18": "4.375rem",
