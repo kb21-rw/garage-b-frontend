@@ -3,7 +3,7 @@ import { footer } from "../../../public/data/data";
 
 const Footer = () => {
   return (
-    <div className="container flex flex-col justify-center items-center text-secondary">
+    <div className="container flex flex-col justify-center items-center dark:text-secondary text-gray-700">
       <div className="flex justify-start md:justify-center items-center gap-x-18 gap-y-11 py-18 flex-wrap">
         <h1 className="text-2xl lg:text-3xl font-semibold">Find us on :</h1>
         <div className="flex flex-col gap-11">
@@ -35,7 +35,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <hr className="border-1 border-primary w-full" />
+      <hr className="border-1 dark:border-primary border-gray-900 w-full" />
       <p className="py-4 text-lg font-extralight">
         <span>&copy;</span> 2025 <strong className="font-bold">The Gym,</strong>{" "}
         All rights reserved!

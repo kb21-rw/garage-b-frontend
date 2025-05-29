@@ -43,7 +43,7 @@ export default function RootLayout({
         <link rel="manifest" href="/site.webmanifest" />
       </head>
       <body
-        className={`${montserrat.variable} antialiased`}
+        className={`${montserrat.variable} antialiased bg-secondary dark:bg-background text-foreground dark:text-secondary text-gray-800 min-h-screen`}
         suppressHydrationWarning={true}
       >
         <Navbar />

@@ -15,7 +15,7 @@ const IconCard = ({ title, description, block }: CardProps) => {
       <div className="  py-16">
         <div className="flex flex-col gap-14">
           <h1 className="text-2xl lg:text-3xl font-medium">{title}</h1>
-          <p className="text-lg lg:text-2.1xl text-secondary font-extralight">
+          <p className="text-lg lg:text-2.1xl dark:text-secondary text-gray-700 font-extralight">
             {description}
           </p>
           <div className="grid grid-cols-1 items-stretch md:grid-cols-2 gap-10 md:gap-20 xl:gap-40">
@@ -25,7 +25,7 @@ const IconCard = ({ title, description, block }: CardProps) => {
           </div>
         </div>
       </div>
-      <hr className="border-1 border-primary w-full" />
+      <hr className="border-1 dark:border-primary border-gray-900 w-full" />
     </>
   );
 };

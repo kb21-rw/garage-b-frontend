@@ -3,21 +3,15 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #010101;
+  --foreground: #ffffff;
+  --background: #010101;
 
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #010101;
-    --foreground: #ededed;
 
-  }
-}
 
 .navbar-container {
-  @apply fixed w-full top-0 z-50 bg-black/50 backdrop-blur-sm px-4 md:px-10 lg:px-20 py-4
+  @apply fixed w-full top-0 z-50 dark:bg-black/50 bg-black/50 backdrop-blur-sm px-4 md:px-10 lg:px-20 py-4
 }
 
 .container {
@@ -25,21 +19,5 @@
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
   font-family: Montserrat, sans-serif;
-}
-
-@keyframes slide-infinite {
-  0% {
-    transform: translateX(0%);
-  }
-
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
-.infinite-slide {
-  animation: slide-infinite 20s linear infinite;
 }
