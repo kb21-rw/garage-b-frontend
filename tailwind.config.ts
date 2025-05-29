@@ -12,12 +12,19 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
         primary: "rgba(34, 228, 246, 0.4)",
-        secondary: "rgba(255, 255, 255, 1)",
+        secondary: "rgba(255, 255, 255, 0.7)",
         "black-300": "rgba(255, 255, 255, 0.11)",
       },
       spacing: {
         "12xl": "125rem",
         "18": "4.375rem",
+        "100": "25rem",
+      },
+      letterSpacing: {
+        1.5: "0.156em",
+      },
+      lineHeight: {
+        "7.5": "1.9688rem",
       },
       fontSize: {
         "2.1xl": "1.5625rem",

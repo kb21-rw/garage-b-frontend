@@ -23,9 +23,9 @@ const Footer = () => {
             })}
           </div>
           <p className="text-lg font-extralight lg:text-2.1xl">
-            Or reach out to:
+            Or reach out to{" "}
             <a
-              href="mail:contact@the-gym.rw"
+              href="mailto:contact@the-gym.rw"
               target="_blank"
               className="hover:text-primary"
             >

@@ -8,7 +8,7 @@ const IconSlider = () => {
   const list = [...Object.values(iconList)];
   return (
     <div className="flex flex-col gap-14 mt-16">
-      <h1 className="text-2xl lg:text-3xl font-medium">Parteners</h1>
+      <h1 className="text-2xl lg:text-3xl font-medium">Our Partners</h1>
       <div className="overflow-hidden w-full py-4">
         {list.length > 5 ? (
           <Marquee pauseOnHover loop={0}>

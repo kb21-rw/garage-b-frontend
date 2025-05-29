@@ -33,16 +33,16 @@ export const footer = [
 export const iconCard = {
   title: "Born in Rwanda active around the world",
   description:
-    "Born out of the vibrant tech scene of Rwanda. we still maintain a strong foothold in the country. Rwandan developers form a core pillar of our distributed teams",
+    "Our products are along the strategies of fostering individualized tourism in higher-volume destinations, unlocking the tourism potential of the middle-class of developing countries, enabling community based tourism.",
   block: [
     {
       title: "Tourism",
       icon: "/image/plane.svg",
       description:
-        "Our products are along the strategies of fostering individualized tourism in higher-volume destinations, unlocking the tourism potential of the middle-class of developing countries, enabling community based tourism.",
+        "Our products are along the strategies of fostering individualized tourism in higher-volume destinations, unlocking the tourism potential of the middle-class of developing countries.",
     },
     {
-      title: "Transiportation",
+      title: "Transportation",
       icon: "/image/transportation.svg",
       description:
         "Innovative approaches to public transport in emerging economies that reduce transport times in rush-hours, reduce cost and reduce air pollution.",
@@ -54,7 +54,7 @@ export const iconCard = {
         "Localized and decentralized approaches to agriculture that provide nutritional security at scale.",
     },
     {
-      title: "Edication",
+      title: "Education",
       icon: "/image/education.svg",
       description:
         "Using modern technologies for robust solutions that work for under priviledged communities.",
