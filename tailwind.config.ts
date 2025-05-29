@@ -6,6 +6,7 @@ export default {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: "class",
   theme: {
     extend: {
       colors: {
@@ -14,6 +15,9 @@ export default {
         primary: "rgba(34, 228, 246, 0.4)",
         secondary: "rgba(255, 255, 255, 0.7)",
         "black-300": "rgba(255, 255, 255, 0.11)",
+      },
+      fontFamily: {
+        montserrat: ["Montserrat", "sans-serif"],
       },
       spacing: {
         "12xl": "125rem",

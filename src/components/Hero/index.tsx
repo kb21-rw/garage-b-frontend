@@ -3,7 +3,7 @@ import Image from "next/image";
 const Homepage = () => {
   return (
     <>
-      <div className="relative h-[40vh] w-full border-b-1 border-primary">
+      <div className="relative h-[40vh] w-full border-b-1dark:border-primary border-gray-900">
         <Image
           src="/image/hero.png"
           alt="Hero"
@@ -17,7 +17,7 @@ const Homepage = () => {
           </h1>
         </div>
       </div>
-      <hr className="border-1 border-primary w-full" />
+      <hr className="border-1 dark:border-primary border-gray-900 w-full" />
     </>
   );
 };
