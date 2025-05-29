@@ -37,7 +37,7 @@ const Navbar = () => {
           className="cursor-pointer"
         /> */}
         <button
-          className="bg-zinc-300 dark:bg-primary px-4 py-2 rounded text-white"
+          className="bg-background dark:bg-primary px-4 py-2 rounded text-white"
           onClick={() => setDarkMode(!darkMode)}
         >
           {darkMode ? "☼" : "☽"}
