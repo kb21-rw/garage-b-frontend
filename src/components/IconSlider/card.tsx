@@ -7,7 +7,7 @@ interface CardProps {
 
 const Card = ({ icon, alt }: CardProps) => {
   return (
-    <div className="relative p-6 mx-6 h-32 w-48 borderdark:border-primary border-gray-900">
+    <div className="relative p-6 mx-6 h-32 w-48 border dark:border-primary border-gray-900">
       <Image
         src={icon}
         alt={alt}
