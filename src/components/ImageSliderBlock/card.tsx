@@ -5,7 +5,11 @@ import Link from "next/link";
 const Card = ({ link, image }: Icon) => {
   const { url, name, alternativeText } = image;
   return (
-    <Link href={link.href} target="_blank">
+    <Link
+      href={link.href}
+      target={link.isExternal ? "_blank" : "_self"}
+      rel="noopener noreferrer"
+    >
       <div className="relative p-6 mx-6 h-32 w-48 border border-primary">
         <Image
           src={url}
