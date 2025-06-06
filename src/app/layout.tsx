@@ -22,6 +22,7 @@ export default async function RootLayout({
   children: React.ReactNode;
 }) {
   const { data } = await getSiteConfig();
+
   const { footer, navbar } = data;
   return (
     <html lang="en">
@@ -29,19 +30,19 @@ export default async function RootLayout({
         <link
           rel="apple-touch-icon"
           sizes="180x180"
-          href={navbar.favicon.url}
+          href={navbar?.favicon.url}
         />
         <link
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href={navbar.favicon.url}
+          href={navbar?.favicon.url}
         />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
-          href={navbar.favicon.url}
+          href={navbar?.favicon.url}
         />
       </head>
       <body
