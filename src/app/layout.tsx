@@ -24,8 +24,6 @@ export default async function RootLayout({
   const { data } = await getSiteConfig();
   const { footer, navbar } = data;
 
-  console.log(navbar, "Navbar");
-
   return (
     <html lang="en">
       <head>

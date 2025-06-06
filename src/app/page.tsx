@@ -1,26 +1,18 @@
-import Homepage from "@/components/Hero";
-import TextBlock from "@/components/TextBlock";
 import ScrollToTop from "@/components/ui/ScrollToTop";
-import { iconCard, textblock } from "../../public/data/data";
-import IconCard from "@/components/IconCard";
-import IconSlider from "@/components/IconSlider";
 import { notFound } from "next/navigation";
 import getHomePage from "./api/homePage";
+import ComponentParser from "./cms/componentParser";
+import { HomepageData } from "@/types/HomePage";
 
 export default async function Home() {
   try {
-    const homepage = await getHomePage();
-    if (!homepage || homepage.length === 0) {
+    const { data: homepage }: { data: HomepageData } = await getHomePage();
+    if (!homepage) {
       return notFound();
     }
     return (
       <div className="min-h-screen container relative">
-        <Homepage />
-        {textblock.map((el, index) => (
-          <TextBlock key={el.title + index} {...el} />
-        ))}
-        <IconSlider />
-        <IconCard {...iconCard} />
+        <ComponentParser blocks={homepage.blocks} />
         <ScrollToTop />
       </div>
     );

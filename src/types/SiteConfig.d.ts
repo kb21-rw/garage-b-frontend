@@ -1,5 +1,6 @@
 import { Image } from "./Image";
 import { Link } from "./Link";
+import { RichText } from "./richText";
 
 interface RootObject {
   id: number;
@@ -30,13 +31,9 @@ export interface SocialMedia {
   text: string;
 }
 export interface Footer {
-  copyright: Copyright[];
+  copyright: RichText[];
   email: string;
   socialmedia: SocialMedia[];
-}
-interface Copyright {
-  id: number;
-  text: string;
 }
 
 export interface NavBar {
