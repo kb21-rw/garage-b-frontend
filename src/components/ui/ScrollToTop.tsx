@@ -24,7 +24,7 @@ const ScrollToTop = () => {
       className="fixed bottom-6 right-6 z-50 p-3 rounded-md bg-primary hover:bg-primary/20 transition shadow-lg"
       aria-label="Scroll to top"
     >
-      <Image src="image/up-arrow.svg" alt="Up-arrow" width={24} height={24} />
+      <Image src="/up-arrow.svg" alt="Up-arrow" width={24} height={24} />
     </button>
   ) : null;
 };

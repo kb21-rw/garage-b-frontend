@@ -14,13 +14,14 @@ const Navbar = ({ logo, menuIcon }: NavBar) => {
     <nav className="navbar-container shadow-md">
       <div className="flex justify-between items-center">
         <Link href={logo.link.href}>
-          <Image
-            src={logoUrl}
-            alt={`${logoAlt}+logo+${logoName}`}
-            width={100}
-            height={100}
-            className="cursor-pointer"
-          />
+          <div className="relative w-25 h-15">
+            <Image
+              src={logoUrl}
+              alt={`${logoAlt} logo ${logoName}`}
+              fill
+              className="object-contain cursor-pointer"
+            />
+          </div>
         </Link>
         <Link href={menuIcon.link.href}>
           <Image
@@ -28,7 +29,7 @@ const Navbar = ({ logo, menuIcon }: NavBar) => {
             alt={`${menuIconAlt}+logo+${menuIconName}`}
             width={30}
             height={30}
-            className="cursor-pointer"
+            className="cursor-pointer object-contain"
           />
         </Link>
       </div>

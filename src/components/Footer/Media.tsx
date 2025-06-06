@@ -6,13 +6,15 @@ const Media = ({ link, image }: SocialMedia) => {
   const { url, alternativeText } = image;
   return (
     <Link href={link.href} target="_blank" rel="noopener noreferrer">
-      <Image
-        src={url}
-        alt={alternativeText + "image"}
-        width={40}
-        height={40}
-        className="cursor-pointer  object-contain"
-      />
+      <div className="relative w-10 h-10">
+        <Image
+          src={url}
+          alt={alternativeText + "image"}
+          fill
+          sizes="100%"
+          className="cursor-pointer  object-contain"
+        />
+      </div>
     </Link>
   );
 };
