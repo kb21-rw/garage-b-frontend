@@ -17,9 +17,9 @@ const RichText = ({ content }: RichTextType) => {
 
           paragraph: ({ children }) => {
             return (
-              <p className="text-lg lg:text-2.1xl text-secondary font-extralight leading-7.5 tracking-1.5">
+              <div className="text-lg lg:text-2.1xl text-secondary font-extralight leading-7.5 tracking-1.5">
                 {children}
-              </p>
+              </div>
             );
           },
 
@@ -29,19 +29,19 @@ const RichText = ({ content }: RichTextType) => {
 
           "list-item": ({ children }) => <li className="my-2">{children}</li>,
 
-          link: ({ children }: RootNodeType) => (
-            <div className="flex flex-col gap-10">
+          link: ({ children, url }: RootNodeType) => {
+            return (
               <Link
-                key={children.props.id}
-                href={children.props.url}
-                className="text-blue-600 underline hover:text-blue-800"
+                key={"children?.props?.id"}
+                href={url}
+                className="text-primary"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                {children.props.text}
+                {children[0]?.props?.text}
               </Link>
-            </div>
-          ),
+            );
+          },
         }}
       />
     </div>
