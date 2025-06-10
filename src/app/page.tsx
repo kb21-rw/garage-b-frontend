@@ -8,7 +8,8 @@ import NoHomepageData from "@/components/ui/NoHomepageData";
 export default async function Home() {
   try {
     const { data: homepage }: { data: HomepageData } = await getHomePage();
-    if (!homepage) {
+
+    if (!homepage || homepage.blocks.length === 0) {
       return <NoHomepageData />;
     }
     return (
