@@ -1,4 +1,3 @@
-import { RootNode } from "react-markdown/lib/ast-to-react";
 export interface RichText {
   type: string;
   children: {

@@ -1,6 +1,6 @@
 "use client";
 
-import { RichTextType, RootNodeType } from "@/types/richText";
+import { RichTextType, RootNodeType } from "@/types";
 import { BlocksRenderer } from "@strapi/blocks-react-renderer";
 
 import Link from "next/link";
