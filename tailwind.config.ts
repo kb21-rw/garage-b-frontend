@@ -17,7 +17,9 @@ export default {
       },
       spacing: {
         "12xl": "125rem",
+        "15": "3.75rem",
         "18": "4.375rem",
+        "25": "6.25rem",
         "100": "25rem",
       },
       letterSpacing: {
