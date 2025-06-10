@@ -13,23 +13,27 @@ const Footer = ({ email, copyright, socialmedia }: Footer) => {
               <Media key={el.id} {...el} />
             ))}
           </div>
-          <p className="text-lg font-extralight lg:text-2.1xl">
-            Or reach out to{" "}
-            <a
-              href={`mailto:${email}`}
-              target="_blank"
-              className="hover:text-primary"
-            >
-              {email}
-            </a>
-          </p>
+          {email && (
+            <p className="text-lg font-extralight lg:text-2.1xl">
+              Or reach out to{" "}
+              <a
+                href={`mailto:${email}`}
+                target="_blank"
+                className="hover:text-primary"
+              >
+                {email}
+              </a>
+            </p>
+          )}
         </div>
       </div>
 
       <hr className="border-1 border-primary w-full" />
-      <div className="py-4 text-lg font-extralight">
-        <RichText content={copyright} />
-      </div>
+      {copyright && (
+        <div className="py-4 text-lg font-extralight">
+          <RichText content={copyright} />
+        </div>
+      )}
     </div>
   );
 };

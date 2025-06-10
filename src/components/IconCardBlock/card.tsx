@@ -13,9 +13,11 @@ const Card = ({ title, description, icon }: IconCard) => {
         height={80}
       />
       <h1 className="text-2xl lg:text-3xl font-medium">{title}</h1>
-      <div className="text-lg lg:text-2.1xl text-secondary font-extralight text-left leading-7.5 tracking-1.5 flex-grow">
-        <RichText content={description} />
-      </div>
+      {description && (
+        <div className="text-lg lg:text-2.1xl text-secondary font-extralight text-left leading-7.5 tracking-1.5 flex-grow">
+          <RichText content={description} />
+        </div>
+      )}
     </div>
   );
 };
