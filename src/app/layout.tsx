@@ -23,35 +23,34 @@ export default async function RootLayout({
 }) {
   const { data } = await getSiteConfig();
 
-  const { footer, navbar } = data;
   return (
     <html lang="en">
       <head>
         <link
           rel="apple-touch-icon"
           sizes="180x180"
-          href={navbar?.favicon.url}
+          href={data ? data.navbar?.favicon?.url : ""}
         />
         <link
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href={navbar?.favicon.url}
+          href={data ? data.navbar?.favicon?.url : ""}
         />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
-          href={navbar?.favicon.url}
+          href={data ? data.navbar?.favicon?.url : ""}
         />
       </head>
       <body
         className={`${montserrat.variable} antialiased`}
         suppressHydrationWarning={true}
       >
-        <Navbar {...navbar} />
+        {data?.navbar && <Navbar {...data.navbar} />}
         {children}
-        <Footer {...footer} />
+        {data?.footer && <Footer {...data.footer} />}
       </body>
     </html>
   );

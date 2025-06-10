@@ -1,14 +1,15 @@
 import ScrollToTop from "@/components/ui/ScrollToTop";
-import { notFound } from "next/navigation";
 import getHomePage from "./api/homePage";
 import ComponentParser from "./cms/componentParser";
 import { HomepageData } from "@/types/HomePage";
+import SiteLoadError from "@/components/error/SiteLoadError";
+import NoHomepageData from "@/components/ui/NoHomepageData";
 
 export default async function Home() {
   try {
     const { data: homepage }: { data: HomepageData } = await getHomePage();
     if (!homepage) {
-      return notFound();
+      return <NoHomepageData />;
     }
     return (
       <div className="min-h-screen container relative">
@@ -18,6 +19,6 @@ export default async function Home() {
     );
   } catch (error) {
     console.error("Error fetching data:", error);
-    notFound();
+    return <SiteLoadError />;
   }
 }
