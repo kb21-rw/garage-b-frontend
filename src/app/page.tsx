@@ -2,7 +2,7 @@ import ScrollToTop from "@/components/ui/ScrollToTop";
 import getHomePage from "./api/homePage";
 import ComponentParser from "./cms/componentParser";
 import { HomepageData } from "@/types/HomePage";
-import SiteLoadError from "@/components/error/SiteLoadError";
+import SiteLoadError from "@/error/SiteLoadError";
 import NoHomepageData from "@/components/ui/NoHomepageData";
 
 export default async function Home() {
