@@ -1,0 +1,33 @@
+{
+  "default_branch": "main",
+  "branches": [
+    "ft/add-component-parser",
+    "ft/dark-mode",
+    "ft/footer",
+    "ft/hero-section",
+    "ft/icon-card",
+    "ft/icon-slider",
+    "main",
+    "origin"
+  ],
+  "parent": {
+    "ft/add-component-parser": "main",
+    "ft/dark-mode": "main",
+    "ft/footer": "main",
+    "ft/hero-section": "main",
+    "ft/icon-card": "main",
+    "ft/icon-slider": "main",
+    "main": null,
+    "origin": "main"
+  },
+  "order": [
+    "main",
+    "ft/add-component-parser",
+    "ft/dark-mode",
+    "ft/footer",
+    "ft/hero-section",
+    "ft/icon-card",
+    "ft/icon-slider",
+    "origin"
+  ]
+}
