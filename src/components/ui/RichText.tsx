@@ -1,9 +1,15 @@
 "use client";
 
-import { RichTextType, RootNodeType } from "@/types";
-import { BlocksRenderer } from "@strapi/blocks-react-renderer";
+import {
+  BlocksRenderer,
+  type BlocksContent,
+} from "@strapi/blocks-react-renderer";
 
 import Link from "next/link";
+
+interface RichTextType {
+  content: BlocksContent;
+}
 
 const RichText = ({ content }: RichTextType) => {
   return (
@@ -29,19 +35,17 @@ const RichText = ({ content }: RichTextType) => {
 
           "list-item": ({ children }) => <li className="my-2">{children}</li>,
 
-          link: ({ children, url }: RootNodeType) => {
-            return (
-              <Link
-                key={"children?.props?.id"}
-                href={url}
-                className="text-primary"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {children[0]?.props?.text}
-              </Link>
-            );
-          },
+          link: ({ children, url }) => (
+            <Link
+              key={"children?.props?.id"}
+              href={url}
+              className="text-primary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {children}
+            </Link>
+          ),
         }}
       />
     </div>
