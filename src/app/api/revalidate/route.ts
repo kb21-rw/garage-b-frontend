@@ -12,7 +12,7 @@ export async function POST(request: NextRequest) {
 
     const timestamp = new Date().toISOString();
 
-    const paths = ["/home-page", "/site-config"];
+    const paths = ["/", "layout", "api/homePage", "api/siteConfig"];
     for (const path of paths) {
       revalidatePath(path);
     }
