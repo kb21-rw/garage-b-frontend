@@ -26,7 +26,7 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link
+        {/* <link
           rel="apple-touch-icon"
           sizes="180x180"
           href={data ? data.navbar?.favicon?.url : null}
@@ -42,7 +42,7 @@ export default async function RootLayout({
           type="image/png"
           sizes="16x16"
           href={data ? data.navbar?.favicon?.url : null}
-        />
+        /> */}
       </head>
       <body
         className={`${montserrat.variable} antialiased`}
