@@ -4,7 +4,7 @@ import { NextRequest, NextResponse } from "next/server";
 export async function POST(request: NextRequest) {
   try {
     const secret = request.headers.get("x-webhook-secret");
-    console.log("secret", secret);
+
     const expectedSecret = process.env.WEBHOOK_SECRET;
     if (secret !== expectedSecret) {
       return NextResponse.json({ message: "Invalid secret" }, { status: 401 });

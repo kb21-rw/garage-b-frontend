@@ -5,7 +5,11 @@ import Link from "next/link";
 const Media = ({ link, image }: SocialMedia) => {
   const { url, alternativeText } = image;
   return (
-    <Link href={link.href} target="_blank" rel="noopener noreferrer">
+    <Link
+      href={link.href}
+      target={link?.isExternal ? "_blank" : "_self"}
+      rel="noopener noreferrer"
+    >
       <div className="relative w-10 h-10">
         <Image
           src={url}
