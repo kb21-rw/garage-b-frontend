@@ -10,7 +10,7 @@ const Card = ({ link, image }: Icon) => {
       target={link?.isExternal ? "_blank" : "_self"}
       rel="noopener noreferrer"
     >
-      <div className="relative p-6 mx-6 h-32 w-48 border border-primary">
+      <div className="relative p-6 mx-6 h-32 w-48">
         <Image
           src={url}
           alt={alternativeText + name + "image"}
