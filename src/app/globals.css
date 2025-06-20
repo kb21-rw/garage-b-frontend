@@ -2,19 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #010101;
 
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #010101;
-    --foreground: #ededed;
-
-  }
-}
 
 .navbar-container {
   @apply fixed w-full top-0 z-50 bg-black/50 backdrop-blur-sm px-4 md:px-10 lg:px-20 py-2
@@ -25,8 +14,8 @@
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  color: #ffffff;
+  background: #010101;
   font-family: Montserrat, sans-serif;
 }
 
