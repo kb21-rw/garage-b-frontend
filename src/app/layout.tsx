@@ -47,7 +47,7 @@ export default async function RootLayout({
         />
       </head>
       <body
-        className={`${montserrat.variable} antialiased`}
+        className={`${montserrat.variable} antialiased bg-[#010101]`}
         suppressHydrationWarning={true}
       >
         {data?.navbar && <Navbar {...data.navbar} />}
