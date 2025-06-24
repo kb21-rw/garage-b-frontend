@@ -6,7 +6,7 @@
 
 
 .navbar-container {
-  @apply w-full top-0 z-50 bg-black/50 backdrop-blur-sm px-4 md:px-10 lg:px-20 pt-4
+  @apply max-w-12xl mx-auto w-full top-0 z-50 bg-black/50 backdrop-blur-sm px-4 md:px-10 lg:px-20 pt-4
 }
 
 .container {
