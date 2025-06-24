@@ -5,11 +5,11 @@ import { NavBar } from "@/types/SiteConfig";
 
 const Navbar = ({ logo, menuIcon }: NavBar) => {
   return (
-    <nav className="navbar-container shadow-md">
+    <nav className="navbar-container shadow-md ">
       <div className="flex justify-between items-center">
         {logo && (
           <Link href={logo.link.href}>
-            <div className="relative w-40 h-15">
+            <div className="relative w-40 h-12">
               <Image
                 src={logo.image.url}
                 alt={`${logo.image.alternativeText} logo ${logo.image.name}`}

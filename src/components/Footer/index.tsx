@@ -5,7 +5,7 @@ import Media from "./Media";
 const Footer = ({ email, copyright, socialmedia }: Footer) => {
   return (
     <div className="container flex flex-col justify-center items-center text-secondary">
-      <div className="flex justify-start md:justify-center items-center gap-x-18 gap-y-11 py-18 flex-wrap">
+      <div className="flex justify-start md:justify-center items-start gap-x-18 gap-y-11 py-18 flex-wrap">
         <h1 className="text-2xl lg:text-3xl font-semibold">Find us on :</h1>
         <div className="flex flex-col gap-11">
           <div className="flex gap-10 items-center justify-start">

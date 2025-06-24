@@ -11,7 +11,7 @@ const IconCard = ({ Header, Cards }: IconCardBlock) => {
           <div className="text-lg lg:text-2.1xl text-secondary font-extralight">
             <RichText content={Header.description} />
           </div>
-          <div className="grid grid-cols-1 items-stretch md:grid-cols-2 gap-10 md:gap-20 xl:gap-40">
+          <div className="grid grid-cols-1 items-stretch md:grid-cols-2 gap-10">
             {Cards.map((el, index) => (
               <Card key={el.title + index} {...el} />
             ))}
