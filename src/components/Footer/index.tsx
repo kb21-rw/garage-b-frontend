@@ -28,12 +28,20 @@ const Footer = ({ email, copyright, socialmedia }: Footer) => {
         </div>
       </div>
 
+<<<<<<< HEAD
+      <hr className="border-1 dark:border-primary border-gray-900 w-full" />
+      <p className="py-4 text-lg font-extralight">
+        <span>&copy;</span> 2025 <strong className="font-bold">The Gym,</strong>{" "}
+        All rights reserved!
+      </p>
+=======
       <hr className="border-1 border-primary w-full" />
       {copyright && (
         <div className="py-4 text-lg font-extralight">
           <RichText content={copyright} />
         </div>
       )}
+>>>>>>> main
     </div>
   );
 };

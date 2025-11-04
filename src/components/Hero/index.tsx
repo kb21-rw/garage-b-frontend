@@ -5,7 +5,7 @@ const Homepage = ({ Header, BackgroundImage }: HeroSectionBlock) => {
   const { url, name } = BackgroundImage[0];
   return (
     <>
-      <div className="relative h-[40vh] w-full border-b-1 border-primary">
+      <div className="relative h-[40vh] w-full border-b-1dark:border-primary border-gray-900">
         <Image
           src={url}
           alt={name + "Hero"}
@@ -19,7 +19,7 @@ const Homepage = ({ Header, BackgroundImage }: HeroSectionBlock) => {
           </h1>
         </div>
       </div>
-      <hr className="border-1 border-primary w-full" />
+      <hr className="border-1 dark:border-primary border-gray-900 w-full" />
     </>
   );
 };

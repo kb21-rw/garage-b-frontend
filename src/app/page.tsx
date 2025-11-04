@@ -5,6 +5,22 @@ import { HomepageData } from "@/types/HomePage";
 import SiteLoadError from "@/error/SiteLoadError";
 import NoHomepageData from "@/components/ui/NoHomepageData";
 
+<<<<<<< HEAD
+export default function Home() {
+  return (
+    <div className="min-h-screen relative">
+      <Homepage />
+      <div className="container">
+        {textblock.map((el, index) => (
+          <TextBlock key={el.title + index} {...el} />
+        ))}
+        <IconSlider />
+        <IconCard {...iconCard} />
+        <ScrollToTop />
+      </div>
+    </div>
+  );
+=======
 export default async function Home() {
   try {
     const { data: homepage }: { data: HomepageData } = await getHomePage();
@@ -22,4 +38,5 @@ export default async function Home() {
     console.error("Error fetching data:", error);
     return <SiteLoadError />;
   }
+>>>>>>> main
 }
