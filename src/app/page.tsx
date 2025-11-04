@@ -1,10 +1,11 @@
-import Homepage from "@/components/Hero";
-import TextBlock from "@/components/TextBlock";
 import ScrollToTop from "@/components/ui/ScrollToTop";
-import { iconCard, textblock } from "../../public/data/data";
-import IconCard from "@/components/IconCard";
-import IconSlider from "@/components/IconSlider";
+import getHomePage from "./api/homePage";
+import ComponentParser from "./cms/componentParser";
+import { HomepageData } from "@/types/HomePage";
+import SiteLoadError from "@/error/SiteLoadError";
+import NoHomepageData from "@/components/ui/NoHomepageData";
 
+<<<<<<< HEAD
 export default function Home() {
   return (
     <div className="min-h-screen relative">
@@ -19,4 +20,23 @@ export default function Home() {
       </div>
     </div>
   );
+=======
+export default async function Home() {
+  try {
+    const { data: homepage }: { data: HomepageData } = await getHomePage();
+
+    if (!homepage || homepage.blocks.length === 0) {
+      return <NoHomepageData />;
+    }
+    return (
+      <div className="min-h-screen container relative">
+        <ComponentParser blocks={homepage.blocks} />
+        <ScrollToTop />
+      </div>
+    );
+  } catch (error) {
+    console.error("Error fetching data:", error);
+    return <SiteLoadError />;
+  }
+>>>>>>> main
 }
